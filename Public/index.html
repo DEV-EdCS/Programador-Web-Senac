@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <!--Aqui é o head onde eu coloco metadados-->
@@ -9,24 +9,44 @@
     <title>Meu primeiro HTML</title>
     <link rel="shortcut icon" href="arquivo-html.png" type="image/x-icon">
     <style>
-        body {
+        .body {
             background-color: rgb(0, 0, 0);
             color: rgb(255, 255, 255);
         }
+
+        .azul { color: blue;
+
+        }       
+
+        .sublinhado { text-decoration: underline;
+
+        }
+
+        #maiusculo {
+            text-transform: uppercase;
+        }
+
+        .italico {
+            font-style: italic;
+        }
+
     </style>
 </head>
 
 <body>
+    <a href="index.html">INICIO</a>
+    <a href="Sobre.html">SOBRE</a>
+
     <p>Olá Mundo
         Sei lá
-    </p>
+    </p class="azul sublinhado" id="maiusculo">
 
     Rosas são vermelhas <br>
     violetas são azuis <br>
 
     <pre>
-            Rosas são vermelhas
-            Violetas são azuis
+            <span style="color: brown;">Rosas são vermelhas</span>
+            <span style="color:rgb(241, 228, 40)">Violetas são azuis</span>
         </pre>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto, odio autem incidunt dolore
@@ -46,9 +66,46 @@
     <img src="../Imgs/arquivo-html.png" title="Logo HTML" alt="LOGO DO HTML" width="200px" height="220px">
     <img src="../Imgs/arquivo-html.pn" title="Logo HTML" alt="LOGO DO HTML" width="200px" height="220px">
 
-    <a href=""></a>
+    <ul>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Carne</li>
+    </ul>
 
+    <ol>
+        <li>Futebol</li>
+        <li>Basquete</li>
+        <li>Volei</li>
+    </ol>
 
+    <dl>
+    <dt>HTML</dt>
+    <dd>html é uma linguagem de marcação</dd>
+    <dt>CSS</dt>
+    <dd>css é uma linguagem de estilização</dd>
+    </dl>
+
+    <table><!--iniciando uma tabela-->
+        <tr><!--linha da tabela-->
+            <th>nome</th><!--cabeçalho das colunas-->
+            <th>idade</th>
+            <th>email</th>
+        </tr>
+
+        <tr>
+            <td>Fulano</td><!--dados das colunas-->
+            <td>20</td>
+            <td>fulano@email.com</td>
+        </tr>
+
+        <tr>
+            <td>Beltrano</td>
+            <td>30</td>
+            <td>beltrano@mail.com</td>
+        </tr>
+    </table>
+
+  
 </body>
 
 </html>
